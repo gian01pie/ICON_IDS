@@ -1,0 +1,1008 @@
+<!DOCTYPE html><html><head>
+      <title>Bozza Progetto</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\GIANLUCA\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.10\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="introduzione">Introduzione </h1>
+<p>Nell'era dell'informazione, la sicurezza dei sistemi informatici è diventata una priorità fondamentale. L'integrità, la riservatezza e la disponibilità delle informazioni sono aspetti cruciali per garantire un funzionamento ottimale di ogni organizzazione. Tuttavia, con l'avvento di tecnologie sempre più sofisticate, anche le minacce informatiche si sono evolute, rendendo i metodi tradizionali di protezione spesso inadeguati o inefficaci contro attacchi avanzati. In questo contesto, l'Intrusion Detection System (IDS) emerge come una soluzione di rilievo, essendo in grado di rilevare, registrare e potenzialmente prevenire tentativi di intrusione.</p>
+<p>L'Intrusion Detection può essere concepita come un problema di classificazione: dati una serie di eventi o transazioni, l'obiettivo è identificare se ciascun evento è legittimo o malevolo. Le tecniche tradizionali si basano su firme o pattern noti di attacchi, ma sono spesso inefficaci contro nuovi o sconosciuti tipi di intrusione. Ecco dove l'ingegneria della conoscenza, in particolare le tecniche di machine learning, possono giocare un ruolo di primo piano.</p>
+<p>Il machine learning, attraverso l'analisi di grandi volumi di dati e l'apprendimento automatico da essi, può rilevare anomalie o schemi sospetti che potrebbero non essere immediatamente evidenti con metodi convenzionali. L'addestramento di modelli predittivi su vasti dataset può aiutare a identificare nuovi tipi di attacchi, migliorando la reattività e l'efficacia dei sistemi IDS.</p>
+<p>Il presente progetto universitario intende esplorare, sviluppare e valutare l'applicazione di diverse tecniche di machine learning al problema dell'intrusion detection. Attraverso lo studio dei dati a disposizione e analisi comparative ci proponiamo di indagare la potenzialità e le sfide di questa sinergia tra ingegneria della conoscenza e sicurezza informatica.</p>
+<p>L'obiettivo finale del progetto è dimostrare le competenze apprese durante il corso di Ingegneria della Conoscenza, applicate ad un problema reale.</p>
+<h2 id="argomenti-trattati">Argomenti trattati </h2>
+<p>Gli argomenti trattai durante il progetto sono: @TODO lista di argomenti</p>
+<h2 id="strumenti-utilizzati">Strumenti utilizzati </h2>
+<h1 id="ids">IDS </h1>
+<p>La pervasività della connettività Internet, sia nelle sfere personali che professionali, ha ampliato l'area vulnerabile agli attacchi informatici. Con l'aumento dei dispositivi connessi a Internet, la sfida è difendersi sia dalle minacce note che da quelle sconosciute, con una frequenza di queste minacce in aumento ogni anno.</p>
+<p>Uno dei principali metodi per salvaguardare le risorse accessibili tramite rete è attraverso l'uso di Sistemi di Rilevazione delle Intrusioni (IDS). Tuttavia, gli IDS tradizionali presentano limiti poiché sono principalmente basati su firme e possono rilevare solo minacce note. Vi è un potenziale nell'utilizzare l'apprendimento automatico (Machine Learning, ML), una sottocategoria dell'intelligenza artificiale, per potenziare questi sistemi, poiché permette ai computer di apprendere e rilevare nuove minacce senza essere esplicitamente programmati.</p>
+<p>Ci sono quattro tipi principali di attacchi:</p>
+<ul>
+<li>di esplorazione;</li>
+<li>negazione del servizio (DoS);</li>
+<li>da Utente a Superutente (U2R) ;</li>
+<li>da Remoto a Locale (R2L).</li>
+</ul>
+<p>Sorgono sfide nel rilevare pacchetti di rete dannosi a causa dell'immensa quantità di dati che devono essere elaborati in tempo reale. La complessità è aggravata con l'avvento di tecnologie come Internet delle Cose (IoT), intelligenza artificiale (AI) e computazione quantistica. Questo aumenta il livello di minaccia e, pertanto, la necessità di un cambiamento nell'approccio alla sicurezza della rete. La grande analisi dei dati (BDA) svolge un ruolo significativo nel monitoraggio e nella previsione di potenziali minacce, aiutando così le aziende nella presa di decisioni.</p>
+<p>Esistono numerose applicazioni dell'apprendimento automatico nel monitoraggio della rete, con un esempio che è un sistema che valuta e identifica incidenti stradali attraverso siti di social media utilizzando reti neurali a memoria di lungo termine bidirezionali.</p>
+<p>Un Sistema di Rilevazione delle Intrusioni (IDS) è un software specializzato progettato per rilevare attività insolite o potenzialmente dannose. Questi sistemi possono essere categorizzati in diversi tipi come HIDS, NIDS, WIDS e NBA. Con l'avanzamento tecnologico, i cybercriminali stanno ideando metodi più sofisticati per sfruttare le aziende. I servizi web, facilmente accessibili al pubblico, sono particolarmente vulnerabili. Gli attacchi web sono ora più focalizzati sull'exploit delle vulnerabilità delle applicazioni piuttosto che sulla violazione dei sistemi.</p>
+<p>Infine, l'importanza di mantenere la sicurezza nelle grandi reti continua ad essere un'area di ricerca dominante, in particolare con l'ascesa prevista del numero di connessioni di dispositivi IoT. La progettazione e la salvaguardia di queste reti rimangono fondamentali per garantire la sicurezza e l'integrità dello scambio di informazioni.</p>
+<h1 id="dataset">Dataset </h1>
+<p>Il dataset che si è scelto di utilizzare è NSL-KDD, questo potrebbe non rappresentare a pieno le reti attuali. Tuttavia, vista la scarsità di database pubblici per i sistemi di rilevazione delle intrusioni basati su rete, si ritiene comunque sia una scelta valida.</p>
+<p>Questo dataset è un aggiornamento di un altro dataset chiamato KDD'99, infatti ne risolve alcune criticità:</p>
+<ul>
+<li>Non contiene record ridondanti, evitando quindi che i classificatori subiscano un bias a causa di record frequenti.</li>
+<li>I set di test proposti non hanno duplicati, assicurando che la performance dei metodi di apprendimento non sia influenzata da record ricorrenti.</li>
+<li>La selezione dei record da ogni gruppo di difficoltà è inversamente proporzionale alla loro presenza nel dataset KDD originale, permettendo una variazione maggiore nei tassi di classificazione tra diversi metodi di apprendimento.</li>
+<li>Le dimensioni dei set di addestramento e di test sono ragionevoli, permettendo test completi senza selezioni casuali, garantendo risultati consistenti e comparabili tra diverse ricerche.</li>
+</ul>
+<p>Le tipologie di attacchi simulate all'interno del dataset ricadono in una di queste 4 categorie:</p>
+<ul>
+<li>Denial of Service Attack (DoS): si verifica quando un aggressore sovraccarica o riempie eccessivamente una risorsa di calcolo o memoria, impedendo così alle richieste legittime di essere eseguite o negando agli utenti autorizzati l'accesso a un sistema.</li>
+<li>User to Root Attack (U2R): è una tipologia di attacco dove l'intruso inizia con l'accesso a un account utente normale del sistema (ottenuto magari intercettando password o attraverso tecniche di ingegneria sociale) e riesce a sfruttare una vulnerabilità per ottenere accesso come superutente o "root".</li>
+<li>Remote to Local Attack (R2L): avviene quando un aggressore, pur avendo la capacità di inviare pacchetti a una macchina attraverso una rete ma senza possedere un account su tale macchina, sfrutta una vulnerabilità per ottenere accesso locale come utente di quella macchina.</li>
+<li>Probing Attack: è un tentativo di raccogliere dati su una rete di computer con l'obiettivo di aggirare le sue misure di sicurezza.</li>
+</ul>
+<p>Inoltre bisogna sottolineare come gli esempi dell'insieme di test non provengono dalla stessa distribuzione di probabilità degli esempi dell'insieme di addestramento, infatti includono tipi specifici di attacchi non presenti nei dati di addestramento, in questo modo si rende il task di classificazione più realistico. Questa scelta è stata presa a seguito dell'assunzione che la maggior parte delle nuove tipologie di attacchi sono grossomodo varianti di attacchi già conosciuti, dunque riconoscere la "firma" degli attacchi noti è sufficiente per individuarne di nuovi.</p>
+<p>Le feature disponibili nel dataset sono divisibili in quattro categorie distinte:</p>
+<ul>
+<li>Feature di Base: tutti i dettagli estraibili da una connessione di tipo TCP/IP</li>
+<li>Feature di Traffico: comprende le feature calcolate rispetto ad un certo intervallo di tempo, sono ulteriormente distinte a seconda se le connessioni hanno stesso host o stesso servizio:
+<ul>
+<li>"stesso host": esaminano solo le connessioni negli ultimi 2 secondi che hanno lo stesso host di destinazione della connessione corrente, e calcolano statistiche relative al comportamento del protocollo, al servizio, ecc.</li>
+<li>"stesso servizio": esaminano solo le connessioni negli ultimi 2 secondi che hanno lo stesso servizio della connessione corrente.</li>
+<li>PROBLEMA: esistono diversi attacchi di esplorazione lenti che esaminano gli host (o le porte) utilizzando un intervallo temporale molto più lungo di 2 secondi, ad esempio, uno ogni minuto. Quindi non sono individuabili entro una finestra temporale di 2 secondi.</li>
+<li>SOLUZIONE: le feature "stesso host" e "stesso servizio" vengono ricalcolate, ma basandosi sulla finestra di connessione di 100 connessioni piuttosto che su una finestra temporale di 2 secondi.</li>
+</ul>
+</li>
+<li>Feature di Contenuto: sono feature che individuano comportamenti sospetti all'interno di porzioni di dati. Gli attacchi R2L e U2R non hanno dei pattern di intrusione molto frequenti, perché questi sono incorporati nelle porzioni di dati dei pacchetti e coinvolgono normalmente solo una singola connessione, mentre gli attacchi DoS e Probing coinvolgono molte connessioni verso pochi host in uno stretto intervallo di tempo. Dunque per individuare questi attacchi meno evidenti si sfruttano queste feature come, ad esempio, il numero di tentativi di accesso falliti.</li>
+</ul>
+<p>Segue la tabella contenente le feature ed una loro breve descrizione:</p>
+<style>
+    .customTable {
+        width: 70%;
+        color: black;
+    }
+    .customTable th {
+        background: grey;
+        word-wrap: break-word;
+
+    }
+    /* Per i primi 9 elementi */
+    .customTable tr:nth-child(-n+9) { background: #D4AF37; }
+    /* Dal 10 al 22 */
+    .customTable tr:nth-child(n+10):nth-child(-n+22) { background: #A0D1CF; }
+    /* Dal 23 al 31 */
+    .customTable tr:nth-child(n+23):nth-child(-n+31) { background: #D5A0D1; }
+    /* Dal 32 al 41 */
+    .customTable tr:nth-child(n+32):nth-child(-n+41) { background: #D3D3D3; }
+</style>
+<div class="customTable">
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Dominio</th>
+<th>Descrizione</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>duration</td>
+<td>real</td>
+<td>Durata della connessione</td>
+<td></td>
+</tr>
+<tr>
+<td>protocol_type</td>
+<td>{tcp,udp, icmp}</td>
+<td>Tipo di protocollo utilizzato</td>
+<td></td>
+</tr>
+<tr>
+<td>service</td>
+<td>*</td>
+<td>Servizio utilizzato dalla rete di destinazione</td>
+<td></td>
+</tr>
+<tr>
+<td>flag</td>
+<td>{ OTH, REJ, RSTO, RSTOS0, RSTR, S0, S1, S2, S3, SF, SH }</td>
+<td>Stato della connessione (Errore o Normale)</td>
+<td></td>
+</tr>
+<tr>
+<td>src_bytes</td>
+<td>real</td>
+<td>Numero di byte di dati trasferiti dalla sorgente alla destinazione</td>
+<td></td>
+</tr>
+<tr>
+<td>dst_bytes</td>
+<td>real</td>
+<td>Numero di byte di dati trasferiti dalla destinazione alla sorgente</td>
+<td></td>
+</tr>
+<tr>
+<td>land</td>
+<td>{0, 1}</td>
+<td>Se porta e indirizzo IP di sorgente e destinazione sono uguali, verrà impostato su 1, altrimenti 0</td>
+<td></td>
+</tr>
+<tr>
+<td>wrong_fragment</td>
+<td>real</td>
+<td>Numero totale di frammenti errati in una connessione</td>
+<td></td>
+</tr>
+<tr>
+<td>urgent</td>
+<td>real</td>
+<td>Numero di pacchetti urgenti (pacchetti con bit urgente attivato)</td>
+<td></td>
+</tr>
+<tr>
+<td>hot</td>
+<td>real</td>
+<td>Numero di indicatori "hot", ovvero ingressi in una directory di sistema</td>
+<td></td>
+</tr>
+<tr>
+<td>num_failed_logins</td>
+<td>real</td>
+<td>Numero di tentativi di accesso falliti</td>
+<td></td>
+</tr>
+<tr>
+<td>logged_in</td>
+<td>{0, 1}</td>
+<td>Mostra lo stato di accesso (1 - accesso riuscito, 0 - altrimenti)</td>
+<td></td>
+</tr>
+<tr>
+<td>num_compromised</td>
+<td>real</td>
+<td>Numero di condizioni compromesse</td>
+<td></td>
+</tr>
+<tr>
+<td>root_shell</td>
+<td>real</td>
+<td>Mostra lo stato della shell di root (1 se ottenuta la shell di root, altrimenti 0)</td>
+<td></td>
+</tr>
+<tr>
+<td>su_attempted</td>
+<td>real</td>
+<td>Impostato su 1 se viene utilizzato il comando "su_root", altrimenti impostato su 0</td>
+<td></td>
+</tr>
+<tr>
+<td>num_root</td>
+<td>real</td>
+<td>Numero di operazioni effettuate come root</td>
+<td></td>
+</tr>
+<tr>
+<td>num_file_creations</td>
+<td>real</td>
+<td>Numero di operazioni di creazione di file</td>
+<td></td>
+</tr>
+<tr>
+<td>num_shells</td>
+<td>real</td>
+<td>Numero di prompt shell in una connessione</td>
+<td></td>
+</tr>
+<tr>
+<td>num_access_files</td>
+<td>real</td>
+<td>Numero di operazioni sui file di controllo degli accessi</td>
+<td></td>
+</tr>
+<tr>
+<td>num_outbound_cmds</td>
+<td>real</td>
+<td>Numero di comandi in uscita in una sessione ftp</td>
+<td></td>
+</tr>
+<tr>
+<td>is_host_login</td>
+<td>{0, 1}</td>
+<td>Se l'accesso avviene come root o admin, questo viene impostato su 1, altrimenti 0</td>
+<td></td>
+</tr>
+<tr>
+<td>is_guest_login</td>
+<td>{0, 1}</td>
+<td>Impostato su 1 se l'accesso avviene come ospite, altrimenti 0</td>
+<td></td>
+</tr>
+<tr>
+<td>count</td>
+<td>real</td>
+<td>Numero di connessioni allo stesso host di destinazione</td>
+<td></td>
+</tr>
+<tr>
+<td>srv_count</td>
+<td>real</td>
+<td>Numero di connessioni allo stesso servizio (numero di porta)</td>
+<td></td>
+</tr>
+<tr>
+<td>serror_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni con flag attivato (#4) s0, s1, s2 o s3, tra le connessioni aggregate nel conteggio (#23)</td>
+<td></td>
+</tr>
+<tr>
+<td>srv_serror_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni con flag attivato (#4) s0, s1, s2 o s3, tra le connessioni aggregate nel conteggio srv (#24)</td>
+<td></td>
+</tr>
+<tr>
+<td>rerror_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni con flag attivato (#4) REJ, tra le connessioni aggregate nel conteggio (#23)</td>
+<td></td>
+</tr>
+<tr>
+<td>srv_rerror_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni con flag attivato (#4) REJ, tra le connessioni aggregate nel conteggio srv (#24)</td>
+<td></td>
+</tr>
+<tr>
+<td>same_srv_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni agli stessi servizi, tra le connessioni aggregate nel conteggio (#23)</td>
+<td></td>
+</tr>
+<tr>
+<td>diff_srv_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni a servizi diversi, tra le connessioni aggregate nel conteggio (#23)</td>
+<td></td>
+</tr>
+<tr>
+<td>srv_diff_host_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni a macchine di destinazione diverse tra le connessioni aggregate nel conteggio srv (#24)</td>
+<td></td>
+</tr>
+<tr>
+<td>dst_host_count</td>
+<td>real</td>
+<td>Numero di connessioni con lo stesso indirizzo IP dell'host di destinazione</td>
+<td></td>
+</tr>
+<tr>
+<td>dst_host_srv_count</td>
+<td>real</td>
+<td>Numero di connessioni con lo stesso numero di porta</td>
+<td></td>
+</tr>
+<tr>
+<td>dst_host_same_srv_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni allo stesso servizio tra le connessioni aggregate nel conteggio dell'host di destinazione (#32)</td>
+<td></td>
+</tr>
+<tr>
+<td>dst_host_diff_srv_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni a un servizio diverso tra le connessioni aggregate nel conteggio dell'host di destinazione (#32)</td>
+<td></td>
+</tr>
+<tr>
+<td>dst_host_same_src_port_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni alla stessa porta di origine tra le connessioni aggregate nel conteggio srv dell'host di destinazione (#33)</td>
+<td></td>
+</tr>
+<tr>
+<td>dst_host_srv_diff_host_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni a macchine di destinazione diverse tra le connessioni aggregate nel conteggio dthtt(#33)</td>
+<td></td>
+</tr>
+<tr>
+<td>dst_host_serror_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni con flag attivato (#4) s0, s1, s2 o s3, tra le connessioni aggregate nel conteggio dell'host di destinazione (#32)</td>
+<td></td>
+</tr>
+<tr>
+<td>dst_host_srv_serror_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni con flag attivato (#4) s0, s1, s2 o s3, tra le connessioni aggregate nel conteggio srv dell'host di destinazione (#33)</td>
+<td></td>
+</tr>
+<tr>
+<td>dst_host_rerror_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni con flag attivato (#4) REJ, tra le connessioni aggregate nel conteggio dell'host di destinazione (#32)</td>
+<td></td>
+</tr>
+<tr>
+<td>dst_host_srv_rerror_rate</td>
+<td>real</td>
+<td>Percentuale di connessioni con flag attivato (#4) REJ, tra le connessioni aggregate nel conteggio srv dell'host di destinazione (#32)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Per ultima abbiamo la feature Attack Class nel cui dominio appaiono tutte le tipologie di attacchi modellati dal dataset, tutti questi attacchi verrano poi mappati, durante la fase di preprocessing, nelle 4 classi di attacchi illustrate in precedenza, come mostrato nella tabella seguente.</p>
+<table>
+<thead>
+<tr>
+<th>Attack Class</th>
+<th>Attack Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DoS</td>
+<td>Back, Land, Neptune, Pod, Smurf, Teardrop, Apache2, Udpstorm, Processtable, Worm</td>
+</tr>
+<tr>
+<td>Probe</td>
+<td>Satan, Ipsweep, Nmap, Portsweep, Mscan, Saint</td>
+</tr>
+<tr>
+<td>R2L</td>
+<td>Guess_Password, Ftp_write, Imap, Phf, Multihop, Warezmaster, Warezclient, Spy, Xlock, Xsnoop, Snmpguess, Snmpgetattack, Http_tunnel, Sendmail, Named</td>
+</tr>
+<tr>
+<td>U2R</td>
+<td>Buffer_overflow, Loadmodule, Rootkit, Perl, Sqlattack, Xterm, Ps</td>
+</tr>
+</tbody>
+</table>
+<p>Il dataset presenta inoltre un ulteriore colonna che rappresenta una valutazione di difficoltà dell'esempio (da 1 a 21), poiché attualmente non è di utilità al progetto si è scelto di ometterlo.</p>
+<h1 id="eda">EDA </h1>
+<p>Prima di poter costruire efficaci sistemi basati sulla conoscenza, è essenziale comprendere in profondità i dati a disposizione. Qui entra in gioco l'Analisi Esplorativa dei Dati (EDA, dall'inglese Exploratory Data Analysis).</p>
+<p>L'EDA rappresenta una tappa fondamentale nella pre-elaborazione e analisi dei dati. Essa serve per comprendere a fondo la struttura dei dati, identificando pattern e anomalie. Prima di sviluppare modelli avanzati, l'EDA aiuta a individuare e gestire valori mancanti o irregolari. Questo processo svela anche importanti correlazioni e tendenze nei dati, fornendo indicazioni preziose per la modellazione.</p>
+<p>Il vantaggio probabilmente più d'impatto sono sicuramente le visualizzazioni che produce, che rendono i dati comprensibili sia per gli esperti che per i principianti, facilitando una comunicazione chiara e efficace. In sostanza, l'EDA è il fondamento per un'analisi dei dati approfondita e informata.</p>
+<p>In un'era dominata dai dati, la capacità di esplorare e comprendere questi dati diventa sempre più vitale, rendendo l'EDA una competenza inestimabile nell'ingegneria della conoscenza.</p>
+<blockquote>
+<p>Di seguito vengono riportate solo le rilevazioni effettuate durante la suddetta analisi, per vedere il codice fare riferimento al notebook</p>
+</blockquote>
+<p>Il dataset è stato a monte già suddiviso dagli sviluppatori in set di addestramento e set di test, di seguito parallelamente esploreremo entrambi i dataset.</p>
+<p>Il training set è composto da 125973 esempi per 44 colonne (di cui la quarantaquattresima è quella che si è aggiunta che identifica la classe di attacco), non sono presenti tuple ripetute e non vi è assenza di valori. Delle 44 feature solo 5 sono di tipo categorico mentre le restanti sono di tipo continuo. Similmente il test set presenta 22544 per 44 colonne e non presenta esempi ripetuti o valori mancanti.</p>
+<blockquote>
+<p>Di seguito si analizzano in dettagli le peculiarità del dataset in parallelo tra training set e test set:</p>
+<ul>
+<li>qualora non fosse specificato si starà parlando del training set</li>
+<li>quando non viene riportato il test set è perchè non esistono differenze sostanziali con il training set e per questo motivo viene omesso</li>
+</ul>
+</blockquote>
+<h2 id="la-classe-target">La classe Target </h2>
+<p>La feature obiettivo scelta per il task di classificazione sarà la feature <code>attack_class</code>, che presenta i valori assunti dalla feature <code>attack</code> mappati nelle 4 categorie precedentemente discusse.</p>
+<p>A questo punto si è dovuta prendere la prima scelta progettuale: scegliere se trasformare o meno il task di classificazione in uno di tipo binario. Infatti si potrebbe ridurre la nostra feature target ad una di tipo binario semplicemente facendo solo distinzione tra connessioni normali e connessioni anomale</p>
+<p>La scelta di utilizzare un classificatore binario porterebbe dei notevoli vantaggi:</p>
+<ul>
+<li><strong>Semplicità:</strong> Un classificatore che distingue tra traffico normale e anomalo è generalmente più semplice da realizzare.</li>
+<li><strong>Velocità:</strong> più veloce da addestrare e richiederebbe meno risorse in fase di esecuzione.</li>
+<li><strong>Generalizzazione:</strong> Può essere più robusto contro le varianti non note di attacchi, dato che non è focalizzato sulla distinzione fine tra le tipologie.</li>
+</ul>
+<p>La scelta dunque andrebbe operata in virtù di quello che poi rappresenterà il progetto finale. Se il sistema è destinato a fornire rapidamente e semplicemente una distinzione tra attività potenzialmente dannose e attività legittime, un classificatore binario potrebbe essere sufficiente. Tuttavia, se l'IDS deve essere implementato in un ambiente altamente sensibile dove tipi specifici di attacchi richiedono risposte immediate e mirate, allora un classificatore multi-classe è più indicato.</p>
+<p>Questo progetto, come illustrato nell'introduzione, assume il carattere di un'esperienza didattica e non è orientato verso una distribuzione pratica. La decisione sulla direzione da prendere è stata intrapresa considerando la sfida che si presenta a chi redige il presente documento. Pertanto, in virtù del fatto che la letteratura offre una vasta gamma di esempi di classificatori binari in questo dominio, si è optato per esplorare l'approccio più complesso e meno trattato della classificazione multi-classe.</p>
+<h3 id="distribuzione-delle-classi-di-attacco">Distribuzione delle classi di attacco </h3>
+<p><img src="DistClassiAttacco.png?0.32074231206885995" alt=""></p>
+<p>Dall'istogramma fornito, possiamo trarre alcune osservazioni interessanti riguardo alla distribuzione dei tipi di attacco nel dataset NSL-KDD, in particolare:</p>
+<ul>
+<li>La maggior parte delle osservazioni rientra categoria Normal, indicando che la maggior parte del traffico di rete nel dataset è benigno.</li>
+<li>La significativa presenza di attacchi DoS (seconda categoria più presente) nel dataset suggerisce che questi attacchi potrebbero essere comuni o che il dataset potrebbe essere stato particolarmente focalizzato sulla cattura di tali attacchi.</li>
+<li>Gli attacchi di tipo "Probe" sono tentativi di scansionare una rete per identificare possibili vulnerabilità senza necessariamente sfruttarle. Questa categoria rappresenta una frazione minore del dataset rispetto ai "Normal" e ai "DoS", ma la sua presenza indica l'importanza di rilevare e prevenire tali tentativi di scansione.</li>
+<li>Le categorie "R2L" (Remote to Local) e "U2R" (User to Root) hanno una presenza molto bassa nel dataset, questo potrebbe indicare che sono meno comuni o meno facilmente rilevabili rispetto ad altri tipi di attacchi.</li>
+</ul>
+<p><img src="DistClassiAttaccoPieTest.png?0.6592598687758138" alt=""></p>
+<p><img src="DistClassiAttaccoTest.png?0.4951276302534122" alt=""></p>
+<p>Per quanto riguarda il test set valgono grossomodo le riflessioni effettuate per l'insieme di addestramento, chiaramente in quest'ultimo aumentano gli esempi di comportamenti anomali poiché è sul riconoscere questi che il classificatore deve lavorare.</p>
+<p>Risulta evidente notare come il dataset non è bilanciato, questo è uno dei primi problemi che ci ha dato la scelta del classificatore multiclasse, infatti se avessimo unito tutte le connessioni anomale, avremmo parzialmente risolto lo sbilanciamento</p>
+<h2 id="feature-categoriche">Feature categoriche </h2>
+<p>Proseguiamo l'analisi analizzando le feature categoriche per cercare di individuare quali feature potrebbero essere più importanti in fase di addestramento dei modelli:</p>
+<h3 id="tipo-di-protocollo">Tipo di protocollo </h3>
+<p><img src="DistProtocollo.png?0.4010159599956642" alt=""></p>
+<p><img src="DistProtocolloTest.png?0.23587419280755872" alt=""></p>
+<p>Dall'istogramma presentato, emerge chiaramente come la gran parte degli attacchi provenga dal protocollo TCP. Ci sono diverse ragioni che spiegano questa predominanza. Prima di tutto, la pervasività del TCP: essendo alla base di numerosi servizi essenziali come l'HTTP e le e-mail, rappresenta un bersaglio di grande interesse per gli aggressori, permettendo loro di massimizzare l'effetto dell'attacco. La natura orientata alla connessione del TCP offre agli aggressori l'opportunità di instaurare una comunicazione costante con il sistema bersaglio. In aggiunta, la sua complessità strutturale, che comprende la gestione delle connessioni, il controllo della congestione e il riconoscimento dei pacchetti, può introdurre punti deboli sfruttabili. Infine, la facilità con cui si possono realizzare attacchi come l'iniezione di pacchetti o le intercettazioni man-in-the-middle tramite TCP rende questo protocollo particolarmente esposto a minacce.</p>
+<p>Risulta anche interessante vedere come le connessioni di tipo icmp (utilizzate per il ping o il tracerout) sono sfruttate soprattutto per compiere attacchi.</p>
+<p>Sulla base dei dati visti e delle considerazioni fatte, sembra che questa feature possa giocare un ruolo significativo nella classificazione degli attacchi.</p>
+<h2 id="tipi-di-attacco">Tipi di attacco </h2>
+<p>La caratteristica <code>attack</code> assume molti valori, per questo motivo al posto di rappresentarla tramite istogramma si è pensato fosse meglio vederla sotto forma di tabella:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right"></th>
+<th style="text-align:left">Attacco</th>
+<th style="text-align:right">Numero di Esempi</th>
+<th style="text-align:right">Percentuale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:left">normal</td>
+<td style="text-align:right">67343</td>
+<td style="text-align:right">53.458</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:left">neptune</td>
+<td style="text-align:right">41214</td>
+<td style="text-align:right">32.717</td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:left">satan</td>
+<td style="text-align:right">3633</td>
+<td style="text-align:right">2.884</td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:left">ipsweep</td>
+<td style="text-align:right">3599</td>
+<td style="text-align:right">2.857</td>
+</tr>
+<tr>
+<td style="text-align:right">5</td>
+<td style="text-align:left">portsweep</td>
+<td style="text-align:right">2931</td>
+<td style="text-align:right">2.327</td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td style="text-align:left">smurf</td>
+<td style="text-align:right">2646</td>
+<td style="text-align:right">2.1</td>
+</tr>
+<tr>
+<td style="text-align:right">7</td>
+<td style="text-align:left">nmap</td>
+<td style="text-align:right">1493</td>
+<td style="text-align:right">1.185</td>
+</tr>
+<tr>
+<td style="text-align:right">8</td>
+<td style="text-align:left">back</td>
+<td style="text-align:right">956</td>
+<td style="text-align:right">0.759</td>
+</tr>
+<tr>
+<td style="text-align:right">9</td>
+<td style="text-align:left">teardrop</td>
+<td style="text-align:right">892</td>
+<td style="text-align:right">0.708</td>
+</tr>
+<tr>
+<td style="text-align:right">10</td>
+<td style="text-align:left">warezclient</td>
+<td style="text-align:right">890</td>
+<td style="text-align:right">0.707</td>
+</tr>
+<tr>
+<td style="text-align:right">11</td>
+<td style="text-align:left">pod</td>
+<td style="text-align:right">201</td>
+<td style="text-align:right">0.16</td>
+</tr>
+<tr>
+<td style="text-align:right">12</td>
+<td style="text-align:left">guess_passwd</td>
+<td style="text-align:right">53</td>
+<td style="text-align:right">0.042</td>
+</tr>
+<tr>
+<td style="text-align:right">13</td>
+<td style="text-align:left">buffer_overflow</td>
+<td style="text-align:right">30</td>
+<td style="text-align:right">0.024</td>
+</tr>
+<tr>
+<td style="text-align:right">14</td>
+<td style="text-align:left">warezmaster</td>
+<td style="text-align:right">20</td>
+<td style="text-align:right">0.016</td>
+</tr>
+<tr>
+<td style="text-align:right">15</td>
+<td style="text-align:left">land</td>
+<td style="text-align:right">18</td>
+<td style="text-align:right">0.014</td>
+</tr>
+<tr>
+<td style="text-align:right">16</td>
+<td style="text-align:left">imap</td>
+<td style="text-align:right">11</td>
+<td style="text-align:right">0.009</td>
+</tr>
+<tr>
+<td style="text-align:right">17</td>
+<td style="text-align:left">rootkit</td>
+<td style="text-align:right">10</td>
+<td style="text-align:right">0.008</td>
+</tr>
+<tr>
+<td style="text-align:right">18</td>
+<td style="text-align:left">loadmodule</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">0.007</td>
+</tr>
+<tr>
+<td style="text-align:right">19</td>
+<td style="text-align:left">ftp_write</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">0.006</td>
+</tr>
+<tr>
+<td style="text-align:right">20</td>
+<td style="text-align:left">multihop</td>
+<td style="text-align:right">7</td>
+<td style="text-align:right">0.006</td>
+</tr>
+<tr>
+<td style="text-align:right">21</td>
+<td style="text-align:left">phf</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">0.003</td>
+</tr>
+<tr>
+<td style="text-align:right">22</td>
+<td style="text-align:left">perl</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">0.002</td>
+</tr>
+<tr>
+<td style="text-align:right">23</td>
+<td style="text-align:left">spy</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0.002</td>
+</tr>
+</tbody>
+</table>
+<p>Nella tabella sopra abbiamo 23 tipi differenti di attacchi e le loro distribuzioni. Abbiamo un'ulteriore conferma del fatto che il dataset non è distribuito uniformemente. Esistono, infatti, numerosi attacchi che compaiono solo in un numero molto limitato di esempi mentre, attacchi come "normal" e "Neptune" compaiono da soli nell'85% degli esempi. Ci sono 16 attacchi, su un totale di 23, in cui i punti dati rappresentano meno dell'1%.</p>
+<p>Risulta interessante, invece, guardare gli attacchi presenti nel test set:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right"></th>
+<th style="text-align:left">Attacco</th>
+<th style="text-align:right">Numero di Esempi</th>
+<th style="text-align:right">Percentuale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:left">normal</td>
+<td style="text-align:right">9711</td>
+<td style="text-align:right">43.076</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:left">neptune</td>
+<td style="text-align:right">4657</td>
+<td style="text-align:right">20.657</td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:left">guess_passwd</td>
+<td style="text-align:right">1231</td>
+<td style="text-align:right">5.46</td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:left">mscan</td>
+<td style="text-align:right">996</td>
+<td style="text-align:right">4.418</td>
+</tr>
+<tr>
+<td style="text-align:right">5</td>
+<td style="text-align:left">warezmaster</td>
+<td style="text-align:right">944</td>
+<td style="text-align:right">4.187</td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td style="text-align:left">apache2</td>
+<td style="text-align:right">737</td>
+<td style="text-align:right">3.269</td>
+</tr>
+<tr>
+<td style="text-align:right">7</td>
+<td style="text-align:left">satan</td>
+<td style="text-align:right">735</td>
+<td style="text-align:right">3.26</td>
+</tr>
+<tr>
+<td style="text-align:right">8</td>
+<td style="text-align:left">processtable</td>
+<td style="text-align:right">685</td>
+<td style="text-align:right">3.039</td>
+</tr>
+<tr>
+<td style="text-align:right">9</td>
+<td style="text-align:left">smurf</td>
+<td style="text-align:right">665</td>
+<td style="text-align:right">2.95</td>
+</tr>
+<tr>
+<td style="text-align:right">10</td>
+<td style="text-align:left">back</td>
+<td style="text-align:right">359</td>
+<td style="text-align:right">1.592</td>
+</tr>
+<tr>
+<td style="text-align:right">11</td>
+<td style="text-align:left">snmpguess</td>
+<td style="text-align:right">331</td>
+<td style="text-align:right">1.468</td>
+</tr>
+<tr>
+<td style="text-align:right">12</td>
+<td style="text-align:left">saint</td>
+<td style="text-align:right">319</td>
+<td style="text-align:right">1.415</td>
+</tr>
+<tr>
+<td style="text-align:right">13</td>
+<td style="text-align:left">mailbomb</td>
+<td style="text-align:right">293</td>
+<td style="text-align:right">1.3</td>
+</tr>
+<tr>
+<td style="text-align:right">14</td>
+<td style="text-align:left">snmpgetattack</td>
+<td style="text-align:right">178</td>
+<td style="text-align:right">0.79</td>
+</tr>
+<tr>
+<td style="text-align:right">15</td>
+<td style="text-align:left">portsweep</td>
+<td style="text-align:right">157</td>
+<td style="text-align:right">0.696</td>
+</tr>
+<tr>
+<td style="text-align:right">16</td>
+<td style="text-align:left">ipsweep</td>
+<td style="text-align:right">141</td>
+<td style="text-align:right">0.625</td>
+</tr>
+<tr>
+<td style="text-align:right">17</td>
+<td style="text-align:left">httptunnel</td>
+<td style="text-align:right">133</td>
+<td style="text-align:right">0.59</td>
+</tr>
+<tr>
+<td style="text-align:right">18</td>
+<td style="text-align:left">nmap</td>
+<td style="text-align:right">73</td>
+<td style="text-align:right">0.324</td>
+</tr>
+<tr>
+<td style="text-align:right">19</td>
+<td style="text-align:left">pod</td>
+<td style="text-align:right">41</td>
+<td style="text-align:right">0.182</td>
+</tr>
+<tr>
+<td style="text-align:right">20</td>
+<td style="text-align:left">buffer_overflow</td>
+<td style="text-align:right">20</td>
+<td style="text-align:right">0.089</td>
+</tr>
+<tr>
+<td style="text-align:right">21</td>
+<td style="text-align:left">multihop</td>
+<td style="text-align:right">18</td>
+<td style="text-align:right">0.08</td>
+</tr>
+<tr>
+<td style="text-align:right">22</td>
+<td style="text-align:left">named</td>
+<td style="text-align:right">17</td>
+<td style="text-align:right">0.075</td>
+</tr>
+<tr>
+<td style="text-align:right">23</td>
+<td style="text-align:left">ps</td>
+<td style="text-align:right">15</td>
+<td style="text-align:right">0.067</td>
+</tr>
+<tr>
+<td style="text-align:right">24</td>
+<td style="text-align:left">sendmail</td>
+<td style="text-align:right">14</td>
+<td style="text-align:right">0.062</td>
+</tr>
+<tr>
+<td style="text-align:right">25</td>
+<td style="text-align:left">rootkit</td>
+<td style="text-align:right">13</td>
+<td style="text-align:right">0.058</td>
+</tr>
+<tr>
+<td style="text-align:right">26</td>
+<td style="text-align:left">xterm</td>
+<td style="text-align:right">13</td>
+<td style="text-align:right">0.058</td>
+</tr>
+<tr>
+<td style="text-align:right">27</td>
+<td style="text-align:left">teardrop</td>
+<td style="text-align:right">12</td>
+<td style="text-align:right">0.053</td>
+</tr>
+<tr>
+<td style="text-align:right">28</td>
+<td style="text-align:left">xlock</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">0.04</td>
+</tr>
+<tr>
+<td style="text-align:right">29</td>
+<td style="text-align:left">land</td>
+<td style="text-align:right">7</td>
+<td style="text-align:right">0.031</td>
+</tr>
+<tr>
+<td style="text-align:right">30</td>
+<td style="text-align:left">xsnoop</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">0.018</td>
+</tr>
+<tr>
+<td style="text-align:right">31</td>
+<td style="text-align:left">ftp_write</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">0.013</td>
+</tr>
+<tr>
+<td style="text-align:right">32</td>
+<td style="text-align:left">worm</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0.009</td>
+</tr>
+<tr>
+<td style="text-align:right">33</td>
+<td style="text-align:left">loadmodule</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0.009</td>
+</tr>
+<tr>
+<td style="text-align:right">34</td>
+<td style="text-align:left">perl</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0.009</td>
+</tr>
+<tr>
+<td style="text-align:right">35</td>
+<td style="text-align:left">sqlattack</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0.009</td>
+</tr>
+<tr>
+<td style="text-align:right">36</td>
+<td style="text-align:left">udpstorm</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0.009</td>
+</tr>
+<tr>
+<td style="text-align:right">37</td>
+<td style="text-align:left">phf</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0.009</td>
+</tr>
+<tr>
+<td style="text-align:right">38</td>
+<td style="text-align:left">imap</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">0.004</td>
+</tr>
+</tbody>
+</table>
+<p>Come possiamo vedere dalla tabella, abbiamo 38 tipi di attacchi, ben 15 in più del training set. Per il resto valgono le stesse considerazioni fatte per il set di addestramento, normal e neptune restano i valori con più esempi. Sebbene, in questo caso, gli esempi siano un po' meglio distribuiti tra i diversi attacchi, resta comunque un evidente sbilanciamento.</p>
+<p>Tornando alla presenza di più tipi di attacchi nel test set, questa è una pratica comune, infatti ciò può riflettere la volatilità e l'evoluzione delle minacce informatiche, oltre a simulare condizioni realistiche in cui un sistema deve rilevare attacchi sconosciuti. Dunque si tratta di una scelta deliberata per valutare l'abilità del modello di generalizzare e per assicurare che sia robusto di fronte a minacce non ancora note durante l'addestramento.</p>
+<p>Possiamo quindi osservare quali sono gli attacchi solo presenti nel test set:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Attacchi solo nel Test Set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">sqlattack</td>
+</tr>
+<tr>
+<td style="text-align:left">ps</td>
+</tr>
+<tr>
+<td style="text-align:left">mailbomb</td>
+</tr>
+<tr>
+<td style="text-align:left">xlock</td>
+</tr>
+<tr>
+<td style="text-align:left">mscan</td>
+</tr>
+<tr>
+<td style="text-align:left">worm</td>
+</tr>
+<tr>
+<td style="text-align:left">snmpgetattack</td>
+</tr>
+<tr>
+<td style="text-align:left">sendmail</td>
+</tr>
+<tr>
+<td style="text-align:left">udpstorm</td>
+</tr>
+<tr>
+<td style="text-align:left">apache2</td>
+</tr>
+<tr>
+<td style="text-align:left">xterm</td>
+</tr>
+<tr>
+<td style="text-align:left">snmpguess</td>
+</tr>
+<tr>
+<td style="text-align:left">processtable</td>
+</tr>
+<tr>
+<td style="text-align:left">saint</td>
+</tr>
+<tr>
+<td style="text-align:left">httptunnel</td>
+</tr>
+<tr>
+<td style="text-align:left">xsnoop</td>
+</tr>
+<tr>
+<td style="text-align:left">named</td>
+</tr>
+</tbody>
+</table>
+<p>Come possiamo vedere ci sono 17 nuovi tipi di attacco, ciò però va contro quello che avevamo evidenziato prima, ovvero che la differenza tra gli attacchi nel training set e quelli nel test set fosse di 15, dunque risulta probabile che anche il training set abbia tipi di attacco che non sono presenti nel test set, infatti:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Attacchi solo nel Training Set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">warezclient</td>
+</tr>
+<tr>
+<td style="text-align:left">spy</td>
+</tr>
+</tbody>
+</table>
+<p>La presenza di tipi di attacco nel training set che non compaiono nel test set potrebbe sembrare controintuitiva, dato che, come abbiamo detto, ci si aspetta il contrario. Le ragioni possono essere disparate, escludendo eventuali errori degli sviluppatori, potrebbe essere dovuto alle tecniche di campionamento e selezione dei dati, oppure alle strategie utilizzate proprio per la divisione del dataset. Ad ogni modo questa curiosità non influenza più di tanto il nostro percorso.</p>
+<h2 id="service">Service </h2>
+<p><img src="DistService.png?0.23388914818268702" alt=""></p>
+<p>Come ci si poteva aspettare solo alcuni servizi sono effettivamente utilizzati, guardando la distribuzione probabilmente solo i primi valori saranno utili alla classificazione, questo, se dimostrato, garantirebbe la possibilità di ridurre il dominio di questa feature a possibilmente i primi 10 valori per frequenza (la distribuzione per gli esempi di test è sostanzialmente equivalente per questo omessa).</p>
+<p>Il fatto che la maggior parte delle osservazioni sia addensata sul lato sinistro può però portare a delle problematiche in termini di classificazione, infatti il modello potrebbe essere esposto in modo sproporzionato solo verso alcuni valori. Tuttavia questa distribuzione potrebbe anche indicare come  la maggior parte delle osservazioni ha un comportamento "tipico", mentre solo alcune osservazioni mostrano un comportamento "atipico". Conoscendo il dominio, possiamo affermare con certezza che questa distribuzione rappresenta la realtà, banalmente vedere il servizio HTTP come il più frequente è un qualcosa che ci si aspetta.</p>
+<p><img src="DistCongiuntaServiceAttackClass.png?0.7640663106498293" alt=""></p>
+<p>Attraverso il grafico a barre impilate qui sopra possiamo visualizzare la distribuzione congiunta di <code>service</code> rispetto alla feature target <code>attack_class</code>, questa ci aiuta a comprendere alcune cose riguardanti questa feature:</p>
+<ul>
+<li>diversi servizi presentano prevalentemente un colore , questo indica che quel particolare servizio è fortemente associato ad un certo tipo di attacco
+<ul>
+<li>le connessioni che utilizzano il servizio <code>private</code> sono per lo più utilizzate per atttacchi<br>
+Sostanzialmente possiamo riuscire ad identificare più facilmente quali servizi sono particolarmente vulnerabili o bersagliati da specifici tipi di attacco, fornendo una visione chiara di dove potrebbero essere necessarie ulteriori misure di sicurezza o indagini.</li>
+</ul>
+</li>
+</ul>
+<p>Tutto questo suggerisce come anche questa feature potrebbe essere importante ai fini della classificazione.</p>
+<h2 id="flag">Flag </h2>
+<p><img src="DistFlag.png?0.17962525296461895" alt=""></p>
+<p>Esattamente come per il caso precedente, anche qui vediamo un addensamento delle osservazioni su pochi valori a sinistra. Anche in questo caso il tutto è verosimile, infatti il flag SF sta per "Successful Finish" e indica che la connessione è stata stabilita con successo e terminata normalmente, dunque è ovvio che sia il più frequente. Allo stesso modo il fatto che S0 sia il secondo più frequente rispecchia la topologia dei dati, infatti questo flag indica "connessione tentata ma non stabilita" ed è una condizione tipica che si verifica durante un attacco di tipo DoS, quando si tenta di esaurire le risorse disponibili di un server inviando tante richieste di connessione (SYN) senza però mai stabilire una connessione (ACK). Allo stesso modo anche REJ e RSTR corrispondono per lo più a connessioni malevole.</p>
+<h2 id="feature-continue">Feature Continue </h2>
+<p>Per prima cosa tra le feature continue si sono distinte le feature binarie:</p>
+<blockquote>
+<p>Feature binarie:<code>['land', 'logged_in', 'root_shell', 'is_host_login', 'is_guest_login']</code></p>
+</blockquote>
+<p>Queste sono sostanzialmente considerabili come variabili categoriche che possono assumere il valore di 0 o 1.</p>
+<p>Si è notato che la feature <code>num_outbound_cmds</code> è composta da soli 0, quindi si è deciso di rimuoverla.</p>
+<p>Ora andiamo a visualizzare i Violin Plot delle rimanenti variabili continue. La scelta di visualizzazione è ricaduta sui violin plot perché sono particolarmente utili per visualizzare la distribuzione di una variabile numerica lungo diversi livelli di una variabile categorica:</p>
+<ul>
+<li>La parte centrale di un violin plot è simile a un box plot e mostra la mediana (una linea orizzontale) e il primo e terzo quartile (i confini della parte spessa del "violino").</li>
+<li>La forma esterna del violin plot rappresenta una stima della densità kernel della distribuzione dei dati, simmetrica rispetto alla sua asse verticale. Ciò significa che quanto più larga è una sezione del "violino", più dati ci sono in quell'intervallo di valori.<br>
+I violin plot forniscono una visualizzazione della densità dei dati, permettendo di vedere dove si concentrano i valori.<br>
+<img src="ViolinPlotContinue.png?0.8979631715968639" alt=""><br>
+Guardando più nel dettaglio alcune feature:</li>
+</ul>
+<ol>
+<li><strong>Duration</strong>: La maggior parte degli attacchi ha una durata molto breve, ad eccezione degli attacchi R2L. Questo indica che gli attacchi R2L potrebbero richiedere più tempo per essere effettuati. La durata potrebbe essere una feature importante da considerare, in particolare per rilevare attacchi R2L.</li>
+<li><strong>Src_bytes e Dst_bytes</strong>: La maggior parte degli attacchi, eccetto U2R, ha un numero relativamente basso di bytes inviati e ricevuti. Gli attacchi U2R, invece, presentano un picco di bytes inviati, suggerendo che potrebbero esserci tentativi di sovraccarico o altri tipi di attacchi che richiedono un elevato volume di traffico.</li>
+<li><strong>Num_failed_logins</strong>: Gli attacchi R2L mostrano un aumento in questa feature, il che ha senso dato che gli attacchi R2L spesso implicano tentativi di accesso non autorizzati.</li>
+<li><strong>Num_compromised e Root_shell</strong>: Anche in questo caso, la maggior parte delle classi ha valori molto bassi, ma U2R e DoS presentano picchi significativi, suggerendo che questi attacchi potrebbero compromettere le macchine o tentare di ottenere l'accesso come root.</li>
+<li><strong>Su_attempted, Num_root, Num_file_creations, Num_shells</strong>: Queste feature mostrano variazioni significative tra le diverse classi di attacchi, indicando che potrebbero essere utili nella classificazione.</li>
+<li><strong>Num_access_files</strong>: R2L e U2R mostrano un aumento, il che è atteso poiché questi attacchi spesso coinvolgono l'accesso ai file.</li>
+</ol>
+<p>Sicuramente alcune delle feature che riguardano i tassi di connessione (<code>dst_host_same_srv_rate</code>...) sono altamente variegate tra le classi, quindi sottolineano una certa separabilità tra i dati e per questo motivo potrebbero essere importanti per identificare particolari tipi di attacchi.</p>
+<p>Le informazioni ottenute dalla visione dei grafici forniscono una panoramica iniziale delle distribuzioni e delle relazioni tra le diverse feature e le classi di attacco. Tuttavia, questi grafici da soli non sono sufficienti per una selezione informata e dettagliata delle feature. Ci sono molte sfaccettature e interazioni tra le feature che potrebbero non essere immediatamente evidenti solo guardando le visualizzazioni.</p>
+<p>Per questo motivo, sarebbe consigliabile applicare degli algoritmi di feature selection. Questi algoritmi analizzano in profondità le relazioni tra le feature e la variabile target, permettendo di identificare le feature più informative e di scartare quelle ridondanti o poco rilevanti. In tal modo, è possibile costruire modelli di rilevamento delle intrusioni più efficienti e precisi, basati su un sottoinsieme ottimale di feature.</p>
+<h2 id="preprocessing">PREPROCESSING </h2>
+<p>Specifically, the ’protocol type’, ’service’, and ’flag’ features were encoded using the LabelEncoder module in Scikit learn</p>
+<h2 id="bilanciamento-dati">Bilanciamento dati </h2>
+<p>E' arrivato il momento di gestire lo sbilanciamento dei dati. Come abbiamo visto nelle sezioni precedenti, la distribuzione delle classi di attacco è chiaramente sbilanciata, nella quale i dati della categoria Normale rappresentano il 53,46%, mentre la categoria U2R conta solo lo 0,04%. Immaginando il nostro sistema in un ambiente di rete reale, poichè le connessioni normali sono sicuramente più comuni di quelle anomale, l'IDS si concentrerà sul monitoraggio del flusso di dati "normali", migliorando così l'accuratezza del riconoscimento complessivo di quest'ultimo. Di conseguenza, traffici di dati anomali, considerabili attacchi, potrebbero essere ignorati, riducendo di fatto le prestazioni del sistema di protezione.</p>
+<p>Attualmente, per affrontare il problema dello sbilanciamento dei dati, si utilizzano metodi di campionamento come il sovracampionamento (oversampling) e il sottocampionamento (undersampling). I metodi di sovracampionamento ripetono o sintetizzano nuovi campioni per le classi insufficienti, mentre il sottocampionamento ridurrà i campioni delle classi più grandi. In questo articolo, utilizziamo prima il metodo di sovracampionamento SMOTE per amplificare i campioni con categorie di campioni minori[5], e infine usiamo il metodo di sottocampionamento ENN per rimuovere i campioni di rumore, formando così il metodo SMOTE-ENN.</p>
+<h1 id="apprendimento-supervisionato">Apprendimento Supervisionato </h1>
+<p>Obiettivi e vincoli</p>
+<ul>
+<li>No low-latency requirement.</li>
+<li>Interpretability partially is important.</li>
+<li>Intrusion Detection should not take hours. It should fininsh in a few seconds or a minute.</li>
+<li>It should detect the network intrusion as well as possible.</li>
+</ul>
+<h2 id="feature-engeniering">FEATURE ENGENIERING </h2>
+<p>calcola la varianza dei valori di ciascuna feature, se la varianza è 0 vuol dire che tutti gli esempi per quella feature hanno lo stesso valore, quindi è inutile per la classificazione e possiamo rimuoverla</p>
+<p>Trovare le feature correlate, calcolando il coefficiente di correlazione, ad esempio num_compromised e num_root sono altamente correlate quindi il variare di una fa variare anche l'altra, questo vuol dire che non abbiamo bisogno di entrambe ma ci basta una sola</p>
+<p>Normalizzazione dei valori delle feature, in modo che ogni feature abbia la stessa influenza sui risultati</p>
+<p>Rule-based feature selection =&gt; serve conoscenza sul domino</p>
+<p>Utilizzando i Decision Tree posso calcolare l'information entropy per vedere quale feature è la più utile</p>
+<p>num outbound cmds ha soli 0 quindi può essere rimossa</p>
+<p>le feature binarie andrebbero trattate come categoriche</p>
+<p>feature continue vanno normalizzate con z-score normalization</p>
+<h1 id="apprendimento-non-supervisionato">Apprendimento Non Supervisionato </h1>
+<p>kmeans può essere utilizzato per individuare nuove forme di</p>
+<h1 id="rappresentazione-della-conoscenza">Rappresentazione della conoscenza </h1>
+<h1 id="ricerca-su-grafo">Ricerca su grafo </h1>
+<h1 id="robe-da-aggiungere">ROBE DA AGGIUNGERE </h1>
+<p>most models that have been used to construct IDS are based on the anomaly detection.</p>
+<p>Quando si hanno dati sbilanciati l'accuratezza non è consigliabile, il tizio utilizza invece AUC</p>
+<h2 id="progetti-da-cui-prendere">PROGETTI DA CUI PRENDERE </h2>
+<p>Road Safety ha fatto cose buone per la gestione degli iper parametri dei vari modelli valli a vedere quando arrivi in questa fase</p>
+<h1 id="bibliografia">BIBLIOGRAFIA </h1>
+<p>M. Tavallaee, E. Bagheri, W. Lu and A. A. Ghorbani, "A detailed analysis of the KDD CUP 99 data set,"&nbsp;<em>2009 IEEE Symposium on Computational Intelligence for Security and Defense Applications</em>, Ottawa, ON, Canada, 2009, pp. 1-6, doi: 10.1109/CISDA.2009.5356528.</p>
+<p>Sarika Choudhary, Nishtha Kesswani,<br>
+Analysis of KDD-Cup’99, NSL-KDD and UNSW-NB15 Datasets using Deep Learning in IoT,<br>
+Procedia Computer Science,<br>
+Volume 167,<br>
+2020,<br>
+Pages 1561-1573,<br>
+ISSN 1877-0509,<br>
+<a href="https://doi.org/10.1016/j.procs.2020.03.367">https://doi.org/10.1016/j.procs.2020.03.367</a>.</p>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S1877050920308334?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S1877050920308334?via%3Dihub</a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
